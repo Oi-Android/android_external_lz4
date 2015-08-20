@@ -13,7 +13,7 @@ LOCAL_MODULE := lz4
 LOCAL_C_INCLUDES := $(lz4_common_c_includes)
 LOCAL_CFLAGS := $(lz4_common_cflags)
 LOCAL_SRC_FILES := $(lz4_common_src_files)
-LOCAL_STATIC_LIBRARIES := liblz4
+LOCAL_STATIC_LIBRARIES := liblz4-static
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_EXECUTABLE)
 
@@ -22,6 +22,6 @@ LOCAL_MODULE := lz4
 LOCAL_C_INCLUDES := $(lz4_common_c_includes)
 LOCAL_CFLAGS := $(lz4_common_cflags)
 LOCAL_SRC_FILES := $(lz4_common_src_files)
-LOCAL_STATIC_LIBRARIES := liblz4
+LOCAL_STATIC_LIBRARIES := liblz4-host
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_HOST_EXECUTABLE)
