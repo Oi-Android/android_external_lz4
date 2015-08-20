@@ -8,7 +8,7 @@ liblz4_common_cflags := -O3 -std=c99 -Wall -Wextra -Wundef -Wshadow -Wcast-align
 LOCAL_ARM_MODE := arm
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := liblz4
+LOCAL_MODULE := liblz4-host
 LOCAL_SRC_FILES := $(liblz4_src_files)
 LOCAL_CFLAGS := $(liblz4_common_cflags)
 include $(BUILD_HOST_STATIC_LIBRARY)
@@ -20,7 +20,7 @@ LOCAL_CFLAGS := $(liblz4_common_cflags)
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := liblz4
+LOCAL_MODULE := liblz4-static
 LOCAL_SRC_FILES := $(liblz4_src_files)
 LOCAL_CFLAGS := $(liblz4_common_cflags)
 include $(BUILD_STATIC_LIBRARY)
